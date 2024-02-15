@@ -1,0 +1,20 @@
+meta {
+  name: Create Tea
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:3000/teas
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "swag",
+    "brand": "yolo",
+    "flavors": ["insh"],
+    "yolo": "swag"
+  }
+}

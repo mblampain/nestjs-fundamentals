@@ -1,0 +1,17 @@
+meta {
+  name: Update Tea
+  type: http
+  seq: 5
+}
+
+patch {
+  url: http://localhost:3000/teas/yolo
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "yolo": "swag"
+  }
+}
